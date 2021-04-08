@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+    <children>
+        <Pane fx:id="pane" prefHeight="581.0" prefWidth="107.0" style="-fx-background-color: #3385ff" />
+        <JFXTextField fx:id="kmmaxTextField" layoutX="143.0" layoutY="206.0" prefHeight="25.0" prefWidth="202.0" promptText="KM " />
+        <JFXTextField fx:id="prixminTextField" layoutX="143.0" layoutY="151.0" prefHeight="25.0" prefWidth="202.0" promptText="Prix _min (DH)" />
+        <JFXTextField fx:id="prixmaxTextField" layoutX="405.0" layoutY="151.0" prefHeight="25.0" prefWidth="202.0" promptText="Prix_max (DH)" />
+        <Label layoutX="129.0" layoutY="25.0" text="Basic Details" textFill="#3385ff">
+            <font>
+              <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="marqueComboBox" layoutX="143.0" layoutY="86.0" prefHeight="25.0" prefWidth="202.0" promptText="Marque" />
+        <JFXComboBox fx:id="carburantComboBox" layoutX="405.0" layoutY="86.0" prefHeight="25.0" prefWidth="202.0" promptText="Type de Carburant" />
+        <JFXComboBox fx:id="anneeComboBox" layoutX="405.0" layoutY="206.0" prefHeight="25.0" prefWidth="202.0" promptText="Année-Modéle " />
+        <JFXComboBox fx:id="puissanceComboBox" layoutX="143.0" layoutY="269.0" prefHeight="25.0" prefWidth="202.0" promptText="Puissance fiscale" />
+        
+        <JFXButton fx:id="continueButton" layoutX="457.0" layoutY="294.0" onAction="#Rechercher" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3385ff" text="Continue">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <Separator layoutX="125.0" layoutY="59.0" prefHeight="4.0" prefWidth="482.0" />
+      <Separator layoutX="125.0" layoutY="334.0" prefHeight="4.0" prefWidth="482.0" />
+      <Label layoutX="144.0" layoutY="344.0" text="Produits" textFill="#3385ff">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="text" layoutX="129.0" layoutY="369.0" prefHeight="188.0" prefWidth="482.0">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextArea>
+    </children>
+</AnchorPane>

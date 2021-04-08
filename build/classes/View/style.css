@@ -1,0 +1,11 @@
+#pane {
+    -fx-prefHeight: "581.0";
+    -fx-prefWidth: "107.0";
+    -fx-style:"-fx-background-color: #3385ff";
+}
+#kmmaxTextField {
+    -fx-layoutX: "143.0";
+    -fx-layoutY: "206.0";
+    -fx-prefHeight: "25.0";
+    -fx-prefWidth: "202.0";
+}
